@@ -11,7 +11,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     };
 
     // Enviar la información a través de EmailJS
-    emailjs.send('FunzyPrueba1', 'template_id', formData)
+    emailjs.send('FunzyPrueba1', 'FunzyPrueba1', formData)
         .then(response => {
             console.log('Correo enviado exitosamente', response.status, response.text);
             // Mostrar ventana emergente de confirmación
